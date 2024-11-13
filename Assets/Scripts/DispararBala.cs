@@ -2,29 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DispararBala : MonoBehaviour
+public class Bullet : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject _bala;
-    [SerializeField]
-    private float _timer = 2f;
-    private int _counter;
-    [SerializeField]
-    private int _maxCounter = 20;
+    public float speed = 10f; // Velocidad de la bala
 
-    void Start()
+    void Update()
     {
-        StartCoroutine(FireBullets_CR());
+        transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
 
-    IEnumerator FireBullets_CR()
+    private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Inicio coroutine");
-        for (_counter = 0; _counter < _maxCounter; _counter++)
-        {
-            Instantiate(_bala, transform.position, transform.rotation);
-            yield return new WaitForSeconds(_timer); // Esperar antes de disparar la siguiente bala
-        }
-        Debug.Log("Fin coroutine");
+        Destroy(gameObject); // Destruir la bala al colisionar con algo
     }
 }
+

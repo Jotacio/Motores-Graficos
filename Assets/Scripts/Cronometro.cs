@@ -42,4 +42,9 @@ public class CronometroTMP : MonoBehaviour
         enMarcha = true;
         tiempo = 0f;
     }
+
+    public void RegistrarEventoVida(VidaJugador vidaJugador)
+    {
+        vidaJugador.vidaCero.AddListener(DetenerCronometro);
+    }
 }

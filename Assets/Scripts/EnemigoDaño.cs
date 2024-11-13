@@ -10,7 +10,7 @@ public class EnemigoDaño : MonoBehaviour
     {
         if (other.TryGetComponent(out VidaJugador vidaJugador))
         {
-            vidaJugador.Tomardaño(daño);
+            vidaJugador.TomarDaño(daño);
         }
     }
 }

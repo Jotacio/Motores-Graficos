@@ -7,11 +7,9 @@ using UnityEngine.Events;
 public class VidaJugador : MonoBehaviour
 {
     public int VidaActual;
-
     public int vidaMaxima;
-    private GameObject GameObject;
-
     public UnityEvent<int> cambioVida;
+    public UnityEvent vidaCero; // Evento que se dispara cuando la vida llega a 0
 
     public int valorPrueba;
 
@@ -23,16 +21,17 @@ public class VidaJugador : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetButtonDown("Fire1"))         
+        if (Input.GetButtonDown("Fire1"))
         {
-            Tomardaño(valorPrueba);
+            TomarDaño(valorPrueba);
         }
         if (Input.GetButtonDown("Fire2"))
         {
             CurarVida(valorPrueba);
         }
     }
-    public void Tomardaño(int cantidadDaño)
+
+    public void TomarDaño(int cantidadDaño)
     {
         int vidaTemporal = VidaActual - cantidadDaño;
         if (vidaTemporal < 0)
@@ -48,20 +47,22 @@ public class VidaJugador : MonoBehaviour
 
         if (VidaActual <= 0)
         {
-            Destroy(GameObject);
+            vidaCero.Invoke(); // Invocar el evento cuando la vida llegue a 0
+            Destroy(gameObject); // Destruir el objeto del jugador
         }
     }
+
     public void CurarVida(int CantidadDeCuracion)
     {
         int vidaTemporal = VidaActual + CantidadDeCuracion;
 
         if (vidaTemporal > vidaMaxima)
         {
-            vidaTemporal = vidaMaxima;
+            VidaActual = vidaMaxima;
         }
         else
         {
-            vidaTemporal = VidaActual;
+            VidaActual = vidaTemporal;
         }
 
         cambioVida.Invoke(VidaActual);
