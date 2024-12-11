@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine;
 
 public class WinCondition : MonoBehaviour
 {
     public string targetTag = "Target"; // Etiqueta del personaje que se toca para ganar
     public GameObject winText; // Referencia al texto de la UI que se mostrará
     public CronometroTMP cronometroScript;
+    
+
     private void Start()
     {
         winText.SetActive(false); // Asegurarse de que el texto está desactivado al inicio
@@ -23,7 +25,7 @@ public class WinCondition : MonoBehaviour
                 // Detener el cronómetro
                 cronometroScript.DetenerCronometro();
                 Debug.Log("¡Victoria! Cronómetro detenido.");
-
+                                
                 // Destruir el objeto de victoria después de que el jugador lo toque
                 Destroy(gameObject);
             }
@@ -34,3 +36,4 @@ public class WinCondition : MonoBehaviour
         }
     }
 }
+

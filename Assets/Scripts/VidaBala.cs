@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class VidaBala : MonoBehaviour
@@ -29,5 +30,22 @@ public class VidaBala : MonoBehaviour
         {
             vidaJugador.TomarDaño(daño);
         }
+
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }
+        else if (collision.gameObject.GetComponent<VidaJugador>() != null)
+        {
+            collision.gameObject.GetComponent<VidaJugador>().TomarDaño(daño);
+        }
+        else if (collision.gameObject.CompareTag("Pared"))
+        {
+            Destroy(gameObject);
+        }
+    }
+
 }

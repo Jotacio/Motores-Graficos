@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CoinSpawner : MonoBehaviour
 {
-    public GameObject coinPrefab; // El prefab de la moneda
+    public List<GameObject> powerUpPrefabs; // Lista de prefabs de power-ups
     public float spawnInterval = 3f; // Intervalo de tiempo entre spawns
     private float timer = 0f;
     private BoxCollider boxCollider;
@@ -19,15 +19,17 @@ public class CoinSpawner : MonoBehaviour
         timer += Time.deltaTime;
         if (timer >= spawnInterval)
         {
-            SpawnCoin();
+            SpawnPowerUp();
             timer = 0f;
         }
     }
 
-    void SpawnCoin()
+    void SpawnPowerUp()
     {
+        int randomIndex = Random.Range(0, powerUpPrefabs.Count);
         Vector3 spawnPosition = GetRandomPositionWithinBox();
-        Instantiate(coinPrefab, spawnPosition, Quaternion.identity);
+        GameObject powerUpPrefab = powerUpPrefabs[randomIndex];
+        Instantiate(powerUpPrefab, spawnPosition, Quaternion.identity);
     }
 
     Vector3 GetRandomPositionWithinBox()

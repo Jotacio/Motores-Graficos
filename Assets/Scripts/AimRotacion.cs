@@ -1,5 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 
 public class Turret : MonoBehaviour
@@ -18,9 +18,22 @@ public class Turret : MonoBehaviour
     private Transform rotatingPart; // El cubo dentro de la torreta que debe girar
     [SerializeField]
     private float rotationSpeed = 5f; // Velocidad de rotación
+    [SerializeField]
+    private AudioClip fireSound; // Sonido de disparo
+    [SerializeField]
+    private float fireSoundVolume = 0.5f; // Volumen del sonido de disparo (0.0 a 1.0)
 
+    private AudioSource audioSource; // Fuente de audio
     private bool targetInRange = false;
     private bool isFiring = false; // Variable para controlar el disparo
+
+    void Start()
+    {
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.clip = fireSound;
+        audioSource.volume = fireSoundVolume; // Ajustar el volumen
+        audioSource.playOnAwake = false; // Asegurarse de que el sonido no se reproduzca al iniciar
+    }
 
     void Update()
     {
@@ -72,6 +85,7 @@ public class Turret : MonoBehaviour
     {
         // Instanciar la bala y asegurar que su rotación coincida con el firePoint
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        audioSource.Play(); // Reproducir el sonido del disparo
         Debug.Log("Disparando al jugador");
     }
 }
