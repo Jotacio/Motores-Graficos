@@ -217,7 +217,7 @@ Transform:
   m_GameObject: {fileID: 13528763}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.05263, y: 0, z: 14.502925}
+  m_LocalPosition: {x: -11.05263, y: 0, z: 9.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -244,7 +244,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0
-  MaxDistance: 25
+  MaxDistance: 30.076567
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -431,7 +431,7 @@ MonoBehaviour:
   rotatingPart: {fileID: 1045495058}
   rotationSpeed: 5
   fireSound: {fileID: 8300000, guid: 3357f75f5fdd3724eb81bfc9abad8fc7, type: 3}
-  fireSoundVolume: 0.11
+  fireSoundVolume: 0.1
 --- !u!82 &33390022
 AudioSource:
   m_ObjectHideFlags: 0
@@ -453,7 +453,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0
-  MaxDistance: 50
+  MaxDistance: 43.2381
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -670,7 +670,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 25
+  MaxDistance: 31.74582
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -1507,7 +1507,7 @@ MonoBehaviour:
   rotatingPart: {fileID: 673627628}
   rotationSpeed: 5
   fireSound: {fileID: 8300000, guid: 3357f75f5fdd3724eb81bfc9abad8fc7, type: 3}
-  fireSoundVolume: 0.11
+  fireSoundVolume: 0.1
 --- !u!82 &273946124
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1529,7 +1529,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0
-  MaxDistance: 50
+  MaxDistance: 38.886726
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -2258,7 +2258,7 @@ MonoBehaviour:
   rotatingPart: {fileID: 728268693}
   rotationSpeed: 5
   fireSound: {fileID: 8300000, guid: 3357f75f5fdd3724eb81bfc9abad8fc7, type: 3}
-  fireSoundVolume: 0.11
+  fireSoundVolume: 0.1
 --- !u!82 &317305007
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2280,7 +2280,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0
-  MaxDistance: 50
+  MaxDistance: 39.014935
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -2756,7 +2756,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 357716686}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.18739855, y: 0.000000018896507, z: -0.0000000036050447, w: 0.98228395}
+  m_LocalRotation: {x: 0.18739855, y: -0.000000018896507, z: 0.0000000036050447, w: 0.98228395}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4094,7 +4094,7 @@ Transform:
   m_GameObject: {fileID: 525973855}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 2.78, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -4121,7 +4121,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0
-  MaxDistance: 25
+  MaxDistance: 33.394814
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -4514,7 +4514,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 576694005}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.22400735, y: 0.000000005101672, z: -0.0000000011726111, w: 0.9745875}
+  m_LocalRotation: {x: 0.22400735, y: 0.000000010053331, z: -0.0000000023107418, w: 0.9745875}
   m_LocalPosition: {x: -0.75, y: 15.373117, z: -61.732315}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5668,7 +5668,7 @@ MonoBehaviour:
   rotatingPart: {fileID: 760390409}
   rotationSpeed: 5
   fireSound: {fileID: 8300000, guid: 3357f75f5fdd3724eb81bfc9abad8fc7, type: 3}
-  fireSoundVolume: 0.11
+  fireSoundVolume: 0.1
 --- !u!82 &699437271
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5690,7 +5690,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0
-  MaxDistance: 50
+  MaxDistance: 25.103065
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -6692,7 +6692,7 @@ MonoBehaviour:
   rotatingPart: {fileID: 1166793614}
   rotationSpeed: 5
   fireSound: {fileID: 8300000, guid: 3357f75f5fdd3724eb81bfc9abad8fc7, type: 3}
-  fireSoundVolume: 0.11
+  fireSoundVolume: 0.1
 --- !u!82 &762807658
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6714,7 +6714,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0
-  MaxDistance: 50
+  MaxDistance: 33.71202
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -7077,9 +7077,9 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c9f847b8a1a0fa941a57b3481b7a0262, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.049
+  m_Volume: 0.01
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -7206,7 +7206,7 @@ Transform:
   m_GameObject: {fileID: 871537809}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.5730996, y: 0, z: -6.9298277}
+  m_LocalPosition: {x: -10.41, y: 0, z: -10.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -7233,7 +7233,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0
-  MaxDistance: 25
+  MaxDistance: 35.495853
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -7420,7 +7420,7 @@ MonoBehaviour:
   rotatingPart: {fileID: 1783333074}
   rotationSpeed: 5
   fireSound: {fileID: 8300000, guid: 3357f75f5fdd3724eb81bfc9abad8fc7, type: 3}
-  fireSoundVolume: 0.11
+  fireSoundVolume: 0.1
 --- !u!82 &873702326
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7442,7 +7442,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0
-  MaxDistance: 50
+  MaxDistance: 29.879648
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -10353,7 +10353,7 @@ MonoBehaviour:
   rotatingPart: {fileID: 978920616}
   rotationSpeed: 5
   fireSound: {fileID: 8300000, guid: 3357f75f5fdd3724eb81bfc9abad8fc7, type: 3}
-  fireSoundVolume: 0.11
+  fireSoundVolume: 0.1
 --- !u!82 &978920618
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10375,7 +10375,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0
-  MaxDistance: 50
+  MaxDistance: 20.62799
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -10724,7 +10724,7 @@ MonoBehaviour:
   rotatingPart: {fileID: 1038962006}
   rotationSpeed: 5
   fireSound: {fileID: 8300000, guid: 3357f75f5fdd3724eb81bfc9abad8fc7, type: 3}
-  fireSoundVolume: 0.11
+  fireSoundVolume: 0.1
 --- !u!82 &1022463994
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10746,7 +10746,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0
-  MaxDistance: 50
+  MaxDistance: 37.824005
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -11582,7 +11582,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0
-  MaxDistance: 25
+  MaxDistance: 30.754194
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -15036,7 +15036,7 @@ MonoBehaviour:
   rotatingPart: {fileID: 1340216748}
   rotationSpeed: 5
   fireSound: {fileID: 8300000, guid: 3357f75f5fdd3724eb81bfc9abad8fc7, type: 3}
-  fireSoundVolume: 0.11
+  fireSoundVolume: 0.1
 --- !u!82 &1340216750
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15058,7 +15058,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0
-  MaxDistance: 50
+  MaxDistance: 21.830322
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -18359,7 +18359,7 @@ Transform:
   m_GameObject: {fileID: 1653356095}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.94152, y: 0, z: 16.637424}
+  m_LocalPosition: {x: 6.02, y: 0, z: 17.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -18386,7 +18386,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0
-  MaxDistance: 25
+  MaxDistance: 30.568684
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -19435,7 +19435,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1903087722}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.255226, y: -0.0000000033804521, z: 8.9233176e-10, w: 0.96688145}
+  m_LocalRotation: {x: 0.25522602, y: 0.000000029012915, z: -0.000000007658488, w: 0.96688145}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -19570,7 +19570,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0
-  MaxDistance: 25
+  MaxDistance: 33.621346
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
