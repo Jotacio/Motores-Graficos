@@ -6,39 +6,35 @@ public class Escudo : MonoBehaviour
 {
     private bool escudoActivo = false;
     private Transform playerTransform;
-    public float orbitaVelocidad = 50f; // Velocidad de orbitación
-
-    private GameObject escudoVisual; // Objeto visual del escudo
+    private GameObject escudoVisual; // Instancia del efecto visual del escudo
 
     private void Start()
     {
         playerTransform = transform; // Asume que este script está en el objeto del jugador
     }
 
-    public void ActivarEscudo(GameObject escudoPrefab)
+    public void ActivarEscudo(GameObject escudoVisualPrefab)
     {
         escudoActivo = true;
-        escudoVisual = Instantiate(escudoPrefab, playerTransform.position, Quaternion.identity);
-        escudoVisual.transform.SetParent(playerTransform); // Hacer que el escudo sea hijo del jugador para facilitar la orbitación
+
+        // Instanciar el efecto visual del escudo
+        escudoVisual = Instantiate(escudoVisualPrefab, playerTransform.position, Quaternion.identity);
+        escudoVisual.transform.SetParent(playerTransform); // Hacer que el efecto visual sea hijo del jugador para que se mueva con él
+
         Debug.Log("Escudo activado");
     }
 
     public void DesactivarEscudo()
     {
         escudoActivo = false;
+
+        // Destruir el efecto visual del escudo
         if (escudoVisual != null)
         {
             Destroy(escudoVisual);
         }
-        Debug.Log("Escudo desactivado");
-    }
 
-    private void Update()
-    {
-        if (escudoActivo && escudoVisual != null)
-        {
-            escudoVisual.transform.RotateAround(playerTransform.position, Vector3.up, orbitaVelocidad * Time.deltaTime);
-        }
+        Debug.Log("Escudo desactivado");
     }
 
     public bool EscudoEstaActivo()

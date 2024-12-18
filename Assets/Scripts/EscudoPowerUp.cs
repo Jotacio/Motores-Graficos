@@ -5,7 +5,7 @@ using System.Collections;
 public class EscudoPowerUp : MonoBehaviour
 {
     public float duracionEscudo = 2f; // Duración del escudo en segundos
-    public GameObject escudoPrefab; // Prefab del escudo visual
+    public GameObject escudoVisualPrefab; // Prefab del efecto visual del escudo
 
     private void OnTriggerEnter(Collider other)
     {
@@ -14,7 +14,7 @@ public class EscudoPowerUp : MonoBehaviour
             Escudo escudo = other.GetComponent<Escudo>();
             if (escudo != null)
             {
-                escudo.ActivarEscudo(escudoPrefab);
+                escudo.ActivarEscudo(escudoVisualPrefab);
                 StartCoroutine(DesactivarEscudoDespuesDeTiempo(escudo));
                 Destroy(gameObject); // Destruir el power-up después de recogerlo
             }
